@@ -1,0 +1,85 @@
+// PRIMARY COLORS
+$color-light-red: hsl(356, 100%, 66%); // CTA TEXT
+$color-very-light-red: hsl(355, 100%, 74%); //CTA HOVER BACKGROUND
+$color-very-dark-blue: hsl(208, 49%, 24%); // HEADINGS
+
+// NEUTRAL COLORS
+$color-white: hsl(0, 0%, 100%); // TEXT
+$color-grayish-blue: hsl(240, 2%, 79%); //FOOTER TEXT
+$color-very-dark-grayish-blue: hsl(207, 13%, 34%); //BODY COPY
+$color-very-dark-black-blue: hsl(240, 10%, 16%); // FOOTER BACKGROUND
+
+// GRADIENT
+// BACKGROUND GRADIENT - INTRO/CTA MOBILE NAV
+$color-very-light-red: hsl(13, 100%, 72%);
+$color-light-red: hsl(353, 100%, 62%);
+
+// BACKGROUND GRADIENT - BODY
+$color-very-dark-gray-blue: hsl(237, 17%, 21%);
+$color-very-dark-saturated-blue: hsl(237, 23%, 32%);
+
+// FONT VARIABLES
+$font-primary: 'Overpass',
+'sans-serif';
+
+$font-secondary: 'Ubuntu', 'sans-serif';
+
+
+
+//Padding
+
+
+// GENERAL
+@mixin transition-basic {
+    transition: all 0.3s;
+
+}
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px;
+$bp-small: 37.5em; // 600px;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+
+    @media only screen and (max-width: $bp-large) {
+        // font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        // font-size: 40%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        // font-size: 35%;
+    }
+
+}
+
+body {
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    overflow-x: hidden;
+    
+    
+    
+
+}
