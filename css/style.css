@@ -325,6 +325,14 @@ main {
   margin: 0 auto 0 auto;
   position: relative; }
 
+.info-top {
+  margin-top: 10rem;
+  text-align: center; }
+  .info-top__title {
+    color: #2c2d3f;
+    font-weight: 500;
+    font-size: 2.8rem; }
+
 .header {
   background: #ff8f70;
   background: url("../images/bg-pattern-intro.svg") 40%, 5% linear-gradient(135deg, #ff8f70 0%, #ff3d54 99%);
