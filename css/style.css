@@ -366,8 +366,15 @@ main {
     font-size: 1.8rem; }
   .header__cta-left {
     background-color: white;
-    color: #ff3d54; }
+    color: #ff3d54;
+    margin-right: 1.2rem; }
+    .header__cta-left:hover {
+      color: white;
+      background: rgba(255, 255, 255, 0.1); }
   .header__cta-right {
     background-color: transparent;
     border: 1px solid white;
     color: white; }
+    .header__cta-right:hover {
+      color: #ff3d54;
+      background-color: white; }

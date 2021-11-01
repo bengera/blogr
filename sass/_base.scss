@@ -159,17 +159,29 @@ main {
         font-weight: 600;
         font-size: 1.8rem;
         
+        
     }
 
     &__cta-left {
         background-color: $color-white;
         color: $color-light-red;
+        margin-right: 1.2rem;
+
+        &:hover {
+            color: $color-white;
+            background: rgba(255, 255, 255, 0.1)    /*  10% opaque green */ 
+        }
     }
 
     &__cta-right {
         background-color: transparent;
         border: 1px solid $color-white;
         color: $color-white;
+
+        &:hover {
+            color: $color-light-red;
+            background-color: $color-white;
+        }
     }
 
 
