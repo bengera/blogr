@@ -22,7 +22,8 @@ $color-very-dark-saturated-blue: hsl(237, 23%, 32%);
 $font-primary: 'Overpass',
 'sans-serif';
 
-$font-secondary: 'Ubuntu', 'sans-serif';
+$font-secondary: 'Ubuntu',
+'sans-serif';
 
 
 
@@ -78,8 +79,99 @@ body {
     font-size: 1.6rem;
     line-height: 1.6;
     overflow-x: hidden;
+   
+
+
+
+
+}
+
+main {
+    
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.page-wrapper {
+    // max-width: 1140px;
+    margin: 0 auto 0 auto;
+    position: relative;
     
     
     
+    
+}
+
+.header {
+    background: rgb(255, 143, 112);
+    background: url('../images/bg-pattern-intro.svg') 40%, 5% linear-gradient(135deg, rgba(255, 143, 112, 1) 0%, rgba(255, 61, 84, 1) 99%);
+    background-repeat: no-repeat;
+    min-height: 100vh; // stops sections overlapping header on vertical resize
+    border-bottom-left-radius: 15rem;
+    
+    &__top-container {
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 15rem;
+        padding: 2rem;
+
+    }
+    
+    &__hero-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        padding: 15rem 1rem 20rem 1rem;
+        
+               
+    }
+
+    &__title {
+        color: $color-white;
+        font-weight: 600;
+        font-family: $font-primary;
+    }
+
+    &__title-sub {
+        color: $color-white;
+        font-weight: 500;
+        font-size: 2rem;
+        font-weight: 300;
+        font-family: $font-primary;
+    }
+
+    &__buttons {
+           
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+
+    &__cta-left,
+    &__cta-right {
+        border: 0;
+        padding:2rem;
+        cursor: pointer;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 1.8rem;
+        
+    }
+
+    &__cta-left {
+        background-color: $color-white;
+        color: $color-light-red;
+    }
+
+    &__cta-right {
+        background-color: transparent;
+        border: 1px solid $color-white;
+        color: $color-white;
+    }
+
+
 
 }

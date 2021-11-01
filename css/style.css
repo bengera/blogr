@@ -316,3 +316,58 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   overflow-x: hidden; }
+
+main {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.page-wrapper {
+  margin: 0 auto 0 auto;
+  position: relative; }
+
+.header {
+  background: #ff8f70;
+  background: url("../images/bg-pattern-intro.svg") 40%, 5% linear-gradient(135deg, #ff8f70 0%, #ff3d54 99%);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  border-bottom-left-radius: 15rem; }
+  .header__top-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 15rem;
+    padding: 2rem; }
+  .header__hero-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15rem 1rem 20rem 1rem; }
+  .header__title {
+    color: white;
+    font-weight: 600;
+    font-family: "Overpass", "sans-serif"; }
+  .header__title-sub {
+    color: white;
+    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: "Overpass", "sans-serif"; }
+  .header__buttons {
+    margin: 0 auto;
+    margin-top: 3rem; }
+  .header__cta-left, .header__cta-right {
+    border: 0;
+    padding: 2rem;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.8rem; }
+  .header__cta-left {
+    background-color: white;
+    color: #ff3d54; }
+  .header__cta-right {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white; }

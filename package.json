@@ -18,5 +18,8 @@
   "homepage": "https://github.com/bengera/blogr#readme",
   "devDependencies": {
     "node-sass": "^6.0.1"
+  },
+  "dependencies": {
+    "hsl-to-hex": "^1.0.0"
   }
 }

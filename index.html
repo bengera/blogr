@@ -27,22 +27,36 @@
 
 
     <header class="header">
-      <div class="header__logo">logo</div>
-      <nav class="header__mobile-nav">nav</nav>
-
+      <div class="header__top-container">
+      <div class="logo">
+        <img class="header__logo" src="images/logo.svg" alt="logo">
+      </div>
+      <nav class="header__mobile-nav"><img class="header__hamburger" src="images/icon-hamburger.svg" alt="hamburger"></nav>
+    </div>
+      
+      <div class="header__hero-container">
+      <h1 class="header__title">A modern publishing platform</h1>
+      <p class="header__title-sub"> Grow your audience and build your online brand</p>
+      <div class="header__buttons">
+      <button class="header__cta-left">Start for Free</button>
+      <button class="header__cta-right">Learn More</button>
+    </div>
+    </div>
     </header>
-
-    <main>
-      <section class="hero">
+    
+      <!-- <section class="hero">
         <h1 class="hero__title">A modern publishing platform</h1>
         <p class="hero__title-sub"> Grow your audience and build your online brand</p>
         <button class="hero__cta-left">Start for Free</button>
         <button class="hero__cta-right">Learn More</button>
-      </section>
+      </section> -->
+
+      <main>
 
       <section class="info-top">
+        <h2 class="info-top__title">Designed for the future</h2>
         <div class="info-top__image">
-          img
+          <img class="info-top__illustration" src="images/illustration-editor-mobile.svg" alt="illustration-top">
         </div>
         <h3 class="info-top__title">
           Introducing an extensible editor
@@ -64,7 +78,9 @@
       </section>
 
       <section class="feature">
-        <div class="feature__image">img</div>
+        <div class="feature__image">
+          <img class="feature__img" src="images/illustration-phones.svg" alt="logo">
+        </div>
         <h2 class="feature__title"> State of the Art Infrastructure</h2>
         <p class="feature__description">
           With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
@@ -74,7 +90,7 @@
 
       <section class="info-bottom">
         <div class="info-bottom__image">
-          img
+          <img class="info-bottom__img" src="images/illustration-laptop-mobile.svg" alt="logo">
         </div>
         <h3 class="info-bottom__title">
           Free, open, simple
@@ -102,8 +118,10 @@
 
     <footer class="footer">
 
+
       <nav class="footer__nav">
 
+        <img class="logo" src="images/logo.svg" alt="logo">
 
         <h4 class="footer__title">Product</h4>
         <ul class="footer__nav-list">
