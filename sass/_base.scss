@@ -102,80 +102,8 @@ main {
 
 }
 
-.info-top {
-    margin-top: 12rem;
-    text-align: center;
-    margin-bottom: 25rem;
-
-    &__illustration {
-        max-width: 100%;
-    }
-
-    &__title-h2,
-    &__title-h3 {
-        color: $color-very-dark-gray-blue;
-        font-weight: 500;
-        font-size: 2.9rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        line-height: 37px;
-
-
-    }
-
-
-    &__title-h2 {
-        margin-bottom: 5rem;
-    }
-
-    &__description {
-        color: $color-very-dark-grayish-blue;
-        padding: 2rem;
-        margin-bottom: 2rem;
-    }
-}
 
 
 
 
-//SECTION FEATURE
-.feature {
-    background: url('../images/bg-pattern-circles.svg') 50%, 10% linear-gradient(0deg, rgba(44, 45, 63, 1) 0%, rgba(63, 65, 100, 1) 99%);
-    
-    text-align: center;
-    border-bottom-left-radius: 12rem;
-    border-top-right-radius: 12rem;
-    min-height: 70vh;
-    background-repeat: no-repeat;
 
-    position: relative;
-
-    
-
-    &__image {
-        
-    }
-
-
-    &__img {
-        max-width: 100%;
-        transform: translate(-0%,-50%); // overlap element instead of absolute positioning
-
-    }
-
-    &__content {
-        position: absolute;
-        top: 250px;
-    }
-
-    &__title {
-        color: $color-white;
-        font-size: 3.2rem;
-        font-weight: 300;
-    }
-
-    &__description {
-        color: $color-white;
-        padding: 2rem;
-    }
-}

@@ -1,0 +1,43 @@
+//SECTION FEATURE
+.feature {
+    background: url('../images/bg-pattern-circles.svg') 50%, 10% linear-gradient(0deg, rgba(44, 45, 63, 1) 0%, rgba(63, 65, 100, 1) 99%);
+    background-position: 50% 140%;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    border-bottom-left-radius: 12rem;
+    border-top-right-radius: 12rem;
+    min-height: 70vh;
+    
+
+    position: relative;
+
+    
+
+    &__image {
+        
+    }
+
+
+    &__img {
+        max-width: 100%;
+        transform: translate(-0%,-50%); // overlap element instead of absolute positioning
+
+    }
+
+    &__content {
+        position: absolute;
+        top: 250px;
+    }
+
+    &__title {
+        color: $color-white;
+        font-size: 3.2rem;
+        font-weight: 300;
+    }
+
+    &__description {
+        color: $color-white;
+        padding: 2rem;
+    }
+}

@@ -325,48 +325,6 @@ main {
   margin: 0 auto 0 auto;
   position: relative; }
 
-.info-top {
-  margin-top: 12rem;
-  text-align: center;
-  margin-bottom: 25rem; }
-  .info-top__illustration {
-    max-width: 100%; }
-  .info-top__title-h2, .info-top__title-h3 {
-    color: #2c2d3f;
-    font-weight: 500;
-    font-size: 2.9rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    line-height: 37px; }
-  .info-top__title-h2 {
-    margin-bottom: 5rem; }
-  .info-top__description {
-    color: #4b5862;
-    padding: 2rem;
-    margin-bottom: 2rem; }
-
-.feature {
-  background: url("../images/bg-pattern-circles.svg") 50%, 10% linear-gradient(0deg, #2c2d3f 0%, #3f4164 99%);
-  text-align: center;
-  border-bottom-left-radius: 12rem;
-  border-top-right-radius: 12rem;
-  min-height: 70vh;
-  background-repeat: no-repeat;
-  position: relative; }
-  .feature__img {
-    max-width: 100%;
-    transform: translate(0%, -50%); }
-  .feature__content {
-    position: absolute;
-    top: 250px; }
-  .feature__title {
-    color: white;
-    font-size: 3.2rem;
-    font-weight: 300; }
-  .feature__description {
-    color: white;
-    padding: 2rem; }
-
 .header {
   background: #ff8f70;
   background: url("../images/bg-pattern-intro.svg") 40%, 5% linear-gradient(135deg, #ff8f70 0%, #ff3d54 99%);
@@ -420,3 +378,46 @@ main {
     .header__cta-right:hover {
       color: #ff3d54;
       background-color: white; }
+
+.info-top {
+  margin-top: 12rem;
+  text-align: center;
+  margin-bottom: 25rem; }
+  .info-top__illustration {
+    max-width: 100%; }
+  .info-top__title-h2, .info-top__title-h3 {
+    color: #2c2d3f;
+    font-weight: 500;
+    font-size: 2.9rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 37px; }
+  .info-top__title-h2 {
+    margin-bottom: 5rem; }
+  .info-top__description {
+    color: #4b5862;
+    padding: 2rem;
+    margin-bottom: 2rem; }
+
+.feature {
+  background: url("../images/bg-pattern-circles.svg") 50%, 10% linear-gradient(0deg, #2c2d3f 0%, #3f4164 99%);
+  background-position: 50% 140%;
+  background-repeat: no-repeat;
+  text-align: center;
+  border-bottom-left-radius: 12rem;
+  border-top-right-radius: 12rem;
+  min-height: 70vh;
+  position: relative; }
+  .feature__img {
+    max-width: 100%;
+    transform: translate(0%, -50%); }
+  .feature__content {
+    position: absolute;
+    top: 250px; }
+  .feature__title {
+    color: white;
+    font-size: 3.2rem;
+    font-weight: 300; }
+  .feature__description {
+    color: white;
+    padding: 2rem; }
