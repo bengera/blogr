@@ -2,7 +2,7 @@
     background: rgb(255, 143, 112);
     background: url('../images/bg-pattern-intro.svg') 40%, 5% linear-gradient(135deg, rgba(255, 143, 112, 1) 0%, rgba(255, 61, 84, 1) 99%);
     background-repeat: no-repeat;
-    min-height: 100vh; // stops sections overlapping header on vertical resize
+    min-height: 100%; // stops sections overlapping header on vertical resize
     border-bottom-left-radius: 15rem;
     
     &__top-container {

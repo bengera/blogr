@@ -347,7 +347,7 @@ main {
   background: #ff8f70;
   background: url("../images/bg-pattern-intro.svg") 40%, 5% linear-gradient(135deg, #ff8f70 0%, #ff3d54 99%);
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 100%;
   border-bottom-left-radius: 15rem; }
   .header__top-container {
     display: flex;
@@ -424,7 +424,7 @@ main {
   text-align: center;
   border-bottom-left-radius: 12rem;
   border-top-right-radius: 12rem;
-  min-height: 70vh;
+  min-height: 100vh;
   position: relative; }
   .feature__img {
     max-width: 100%;
