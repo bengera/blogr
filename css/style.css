@@ -325,6 +325,24 @@ main {
   margin: 0 auto 0 auto;
   position: relative; }
 
+.footer {
+  text-align: center;
+  background-color: #25252d;
+  padding: 5rem; }
+  .footer__logo {
+    margin-bottom: 4rem; }
+  .footer__title {
+    color: white;
+    margin-bottom: 2.5rem; }
+  .footer__nav-list {
+    list-style: none;
+    margin-bottom: 2rem; }
+  .footer__link:link, .footer__link:visited {
+    color: #c8c8cb;
+    text-decoration: none; }
+  .footer__link:hover, .footer__link:active {
+    border-bottom: 1px solid white; }
+
 .header {
   background: #ff8f70;
   background: url("../images/bg-pattern-intro.svg") 40%, 5% linear-gradient(135deg, #ff8f70 0%, #ff3d54 99%);
@@ -386,7 +404,7 @@ main {
   .info-top__illustration {
     max-width: 100%; }
   .info-top__title-h2, .info-top__title-h3 {
-    color: #2c2d3f;
+    color: #1f3f5b;
     font-weight: 500;
     font-size: 2.9rem;
     padding-left: 1rem;
@@ -421,3 +439,21 @@ main {
   .feature__description {
     color: white;
     padding: 2rem; }
+
+.info-bottom {
+  margin-top: 5rem;
+  text-align: center;
+  margin-bottom: 5rem; }
+  .info-bottom__img {
+    max-width: 100%; }
+  .info-bottom__title-h2, .info-bottom__title-h3 {
+    color: #1f3f5b;
+    font-weight: 500;
+    font-size: 2.9rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 37px; }
+  .info-bottom__description {
+    color: #4b5862;
+    padding: 2rem;
+    margin-bottom: 2rem; }
