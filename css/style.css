@@ -436,7 +436,8 @@ main {
   .feature__text-content {
     display: flex;
     flex-direction: column;
-    grid-row: 2 / 3; }
+    grid-row: 2 / 3;
+    margin-top: 2rem; }
   .feature__title {
     color: white; }
   .feature__description {
