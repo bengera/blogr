@@ -424,16 +424,19 @@ main {
   position: relative; }
   .feature__wrapper {
     min-height: 55rem;
-    margin-top: 35rem; }
+    margin-top: 35rem;
+    display: grid;
+    grid-template-rows: 25% 75%; }
   .feature__img-container {
     position: absolute;
-    transform: translate(0%, -50%); }
+    transform: translate(0%, -50%);
+    grid-row: 1 / 2; }
   .feature__img {
     max-width: 100%; }
   .feature__text-content {
     display: flex;
     flex-direction: column;
-    padding: 25rem 5rem 18rem 5rem; }
+    grid-row: 2 / 3; }
   .feature__title {
     color: white; }
   .feature__description {
