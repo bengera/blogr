@@ -52,6 +52,7 @@ $bp-small: 37.5em; // 600px;
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    
 }
 
 html {
@@ -74,7 +75,7 @@ html {
 }
 
 body {
-    font-family: $font-secondary;
+    font-family: $font-primary;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.6;
@@ -112,9 +113,9 @@ main {
         margin-bottom: 4rem;
     }
 
-    &__nav {
+    // &__nav {
        
-    }
+    // }
 
     &__title {
         color: $color-white;
@@ -126,9 +127,9 @@ main {
         margin-bottom: 2rem;
     }
 
-    &__item {
+    // &__item {
         
-    }
+    // }
 
     &__link {
 

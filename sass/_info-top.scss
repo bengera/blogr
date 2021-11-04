@@ -1,3 +1,7 @@
+// .info-top > * + * {
+//     // margin-bottom: 1rem;
+// }
+
 .info-top {
     margin-top: 12rem;
     text-align: center;
@@ -21,12 +25,12 @@
 
 
     &__title-h2 {
-        margin-bottom: 5rem;
+        // margin-bottom: 5rem;
     }
 
     &__description {
         color: $color-very-dark-grayish-blue;
         padding: 2rem;
-        margin-bottom: 2rem;
+        // margin-bottom: 2rem;
     }
 }
