@@ -437,9 +437,12 @@ main {
     display: flex;
     flex-direction: column;
     grid-row: 2 / 3;
-    margin-top: 2rem; }
+    margin-top: 6rem; }
   .feature__title {
-    color: white; }
+    color: white;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 39px; }
   .feature__description {
     color: #c8c8cb;
     padding: 2rem; }
