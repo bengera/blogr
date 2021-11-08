@@ -28,7 +28,7 @@ $font-secondary: 'Ubuntu',
 
 
 //Padding
-
+$minor-padding: 2rem;
 
 // GENERAL
 @mixin transition-basic {
@@ -52,7 +52,7 @@ $bp-small: 37.5em; // 600px;
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-    
+
 }
 
 html {
@@ -87,11 +87,6 @@ body {
 
 }
 
-main {
-
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
 
 .page-wrapper {
     // max-width: 1140px;
@@ -103,57 +98,118 @@ main {
 
 }
 
-.footer {
+
+.mobile-navigation {
+    background-color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    width: 85vw;
+    margin: 0 auto;
+    display: block;
+    z-index: 20;
     text-align: center;
-    background-color: $color-very-dark-black-blue;
-    padding: 5rem;
-    
+    padding: 3rem;
+    font-size: 1.8rem;
+    border-radius: 10px;
 
-    &__logo {
-        margin-bottom: 4rem;
-    }
+    box-shadow: 1px 12px 20px 0px rgba(0, 0, 0, 0.29);
+    -webkit-box-shadow: 1px 12px 20px 0px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 1px 12px 20px 0px rgba(0, 0, 0, 0.29);
 
-    // &__nav {
-       
-    // }
 
-    &__title {
-        color: $color-white;
-        margin-bottom: 2.5rem;
-    }
 
-    &__nav-list {
+
+    &__list {
         list-style: none;
-        margin-bottom: 2rem;
+        border-bottom: 1px solid rgba(178, 178, 178, 0.5);
+
     }
 
-    // &__item {
-        
-    // }
-
-    &__link {
-
-        &:link,
-        &:visited {
-            color: $color-grayish-blue;
-            text-decoration: none;
-
-        }
-
-        &:hover,
-        &:active {
-            border-bottom: 1px solid $color-white;
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        margin-bottom: $minor-padding;
 
 
-        }
-        
-        
     }
-}
 
     
+    &__link {
+        color: $color-very-dark-black-blue;
+        text-decoration: none;
+        margin-left: 1rem;
+    }
+
+    &__arrow {
+        margin-left: 0.5rem;
+    }
+
+
+
+    &__btn-login,
+    &__btn-sign-up {
+        border: 0;
+
+
+    }
+
+    &__btn-login {
+        background-color: transparent;
+        cursor: pointer;
+        padding-bottom: $minor-padding;
+        font-weight: 600;
+        margin-top: $minor-padding;
+
+
+    }
+
+    &__btn-sign-up {
+        border: 0;
+        padding: 1.9rem;
+        cursor: pointer;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 1.8rem;
+        width: 45%;
+        color: $color-white;
+        background: rgb(37, 230, 211);
+        background: linear-gradient(90deg, rgba(255, 143, 112, 1) 0%, rgba(255, 61, 84, 1) 100%);
 
 
 
 
+    }
 
+    // CONTAINER FOR INNER
+
+    &__inner {
+        background-color: $color-grayish-blue;
+        background-color: #efeff1;
+        padding: 2rem;
+        border-radius: 10px;
+        margin-bottom: $minor-padding;
+
+
+    }
+
+    &__inner-list {
+        list-style: none;
+
+    }
+    
+    &__inner-item:not(:last-child) {
+        margin-bottom: $minor-padding;
+    }
+
+    &__inner-link {
+        text-decoration: none;
+        color: $color-very-dark-grayish-blue;
+    }
+
+
+
+}

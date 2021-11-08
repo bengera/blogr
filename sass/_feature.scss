@@ -1,7 +1,4 @@
 //SECTION FEATURE 
-
-
-
 .feature {
     background: url('../images/bg-pattern-circles.svg') 50%, 10% linear-gradient(0deg, rgba(44, 45, 63, 1) 0%, rgba(63, 65, 100, 1) 99%);
     background-position: 50% 140%;
@@ -15,7 +12,6 @@
 
     &__wrapper {
         min-height: 55rem;
-        margin-top: 35rem;
         display: grid;
         grid-template-rows: 25% 75%;
     }
@@ -45,11 +41,13 @@
         font-size: 33px;
         font-weight: 700;
         line-height: 39px;
+        margin-bottom: 1rem;
     }
 
     &__description {
         color: $color-grayish-blue;
-        padding: 2rem;
+        padding: 0 $minor-padding 0 $minor-padding;
+        line-height: 30px;
     }
 
 }
