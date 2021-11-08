@@ -107,12 +107,13 @@ body {
     right: 0;
     width: 85vw;
     margin: 0 auto;
-    display: block;
+    display: none;
     z-index: 20;
     text-align: center;
     padding: 3rem;
     font-size: 1.8rem;
     border-radius: 10px;
+    
 
     box-shadow: 1px 12px 20px 0px rgba(0, 0, 0, 0.29);
     -webkit-box-shadow: 1px 12px 20px 0px rgba(0, 0, 0, 0.29);
@@ -174,7 +175,7 @@ body {
         border-radius: 30px;
         font-weight: 600;
         font-size: 1.8rem;
-        width: 45%;
+        width: 55%;
         color: $color-white;
         background: rgb(37, 230, 211);
         background: linear-gradient(90deg, rgba(255, 143, 112, 1) 0%, rgba(255, 61, 84, 1) 100%);

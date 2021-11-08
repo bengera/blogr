@@ -5,7 +5,11 @@
     min-height: 100%; // stops sections overlapping header on vertical resize
     border-bottom-left-radius: 15rem;
     position: relative;
-    
+
+    &__mobile-nav {
+        cursor: pointer;
+    }
+        
     &__top-container {
         
         display: flex;

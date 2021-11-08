@@ -329,7 +329,7 @@ body {
   right: 0;
   width: 85vw;
   margin: 0 auto;
-  display: block;
+  display: none;
   z-index: 20;
   text-align: center;
   padding: 3rem;
@@ -368,7 +368,7 @@ body {
     border-radius: 30px;
     font-weight: 600;
     font-size: 1.8rem;
-    width: 45%;
+    width: 55%;
     color: white;
     background: #25e6d3;
     background: linear-gradient(90deg, #ff8f70 0%, #ff3d54 100%); }
@@ -393,6 +393,8 @@ body {
   min-height: 100%;
   border-bottom-left-radius: 15rem;
   position: relative; }
+  .header__mobile-nav {
+    cursor: pointer; }
   .header__top-container {
     display: flex;
     flex-direction: row;
