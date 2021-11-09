@@ -114,6 +114,7 @@ body {
     font-size: 1.8rem;
     border-radius: 10px;
     
+    
 
     box-shadow: 1px 12px 20px 0px rgba(0, 0, 0, 0.29);
     -webkit-box-shadow: 1px 12px 20px 0px rgba(0, 0, 0, 0.29);
@@ -194,6 +195,8 @@ body {
         border-radius: 10px;
         margin-bottom: $minor-padding;
 
+        display: none;
+
 
     }
 
@@ -211,6 +214,19 @@ body {
         color: $color-very-dark-grayish-blue;
     }
 
+    &__arrow {
+        transition: ease .25s;
+        cursor: pointer;
+
+        &:active {
+            // transform: rotate(180deg);
+        }
+
+    
+        
+    }
+
 
 
 }
+

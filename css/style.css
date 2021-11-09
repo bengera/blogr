@@ -377,7 +377,8 @@ body {
     background-color: #efeff1;
     padding: 2rem;
     border-radius: 10px;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    display: none; }
   .mobile-navigation__inner-list {
     list-style: none; }
   .mobile-navigation__inner-item:not(:last-child) {
@@ -385,6 +386,9 @@ body {
   .mobile-navigation__inner-link {
     text-decoration: none;
     color: #4b5862; }
+  .mobile-navigation__arrow {
+    transition: ease .25s;
+    cursor: pointer; }
 
 .header {
   background: #ff8f70;
