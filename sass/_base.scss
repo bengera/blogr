@@ -30,6 +30,9 @@ $font-secondary: 'Ubuntu',
 //Padding
 $minor-padding: 2rem;
 
+//Margin
+$desktop-element-margin: 15rem;
+
 // GENERAL
 @mixin transition-basic {
     transition: all 0.3s;
@@ -228,5 +231,11 @@ body {
 
 
 
+}
+
+main {
+    max-width: 1920px;
+    margin: 0 auto;
+    
 }
 

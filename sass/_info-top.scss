@@ -8,9 +8,46 @@
     margin-bottom: 25rem;
     padding: 0 $minor-padding 0 $minor-padding;
 
+
+    @media only screen and (min-width: $bp-large) {
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
+        // grid-template-rows: min-content min-content;
+        margin-bottom: $desktop-element-margin;
+        // text-align: justify;
+
+    }
+
+    &__container {
+
+        @media only screen and (min-width: $bp-large) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            bordeR: 2px solid black;
+            max-width: 80vw;
+            margin: 0 auto;
+    
+        }
+        
+    }
+
     &__illustration {
         max-width: 100%;
         margin: 4rem 0 5rem 0;
+
+        @media only screen and (min-width: $bp-large) {
+            // width: 100%;
+            max-width: 600px;
+            margin: 0;
+
+        }
+    }
+
+    &__image {
+        @media only screen and (min-width: $bp-large) {
+            grid-column: 2 / 2;
+            text-align: left;
+        }
     }
 
     &__title-h2,
@@ -22,12 +59,21 @@
         padding-right: 1rem;
         line-height: 37px;
 
+        @media only screen and (min-width: $bp-large) {
+            grid-row: 1 / 1;
+            grid-column: 1 / -1;
+        }
+
 
     }
 
 
     &__title-h2 {
-        // margin-bottom: 5rem;
+        @media only screen and (min-width: $bp-large) {
+            padding: 5rem;
+            font-size: 4.5rem;
+            text-align: center;
+        }
     }
 
     &__description {
@@ -37,6 +83,15 @@
     }
 
     &__description:first-of-type {
-        margin-bottom:2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    &__text-content {
+        @media only screen and (min-width: $bp-large) {
+            grid-column: 1 / 1;
+            grid-row: 1 / 2;
+            margin-top: 5rem;
+            text-align: left;
+        }
     }
 }

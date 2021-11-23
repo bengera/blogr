@@ -3,37 +3,48 @@
     background: url('../images/bg-pattern-circles.svg') 50%, 10% linear-gradient(0deg, rgba(44, 45, 63, 1) 0%, rgba(63, 65, 100, 1) 99%);
     background-position: 50% 140%;
     background-repeat: no-repeat;
-
     text-align: center;
     border-bottom-left-radius: 12rem;
     border-top-right-radius: 12rem;
-    // min-height: 100vh;
     position: relative;
 
     &__wrapper {
         min-height: 55rem;
         display: grid;
         grid-template-rows: 25% 75%;
+
+        @media only screen and (min-width: $bp-large) {
+            min-height: 40rem;
+            grid-template-columns: 1fr 2fr;
+        }
     }
 
     &__img-container {
         position: absolute;
         transform: translate(0%, -50%);
         grid-row: 1 / 2;
+
+        @media only screen and (min-width: $bp-large) {
+            transform: translate(0%, -10%);
+        }
     }
 
+    
     &__img {
         max-width: 100%;
     }
+    
 
     &__text-content {
         display: flex;
         flex-direction: column;
         grid-row: 2 / 3;
         margin-top: 6rem;
-        // padding: 25rem 5rem 18rem 5rem;
-
-
+      
+        @media only screen and (min-width: $bp-large) {
+            grid-column: 2 / 2;
+            margin-top: 0;
+        }
     }
 
     &__title {
@@ -54,32 +65,3 @@
 
 
 
-
-//     &__img-container {
-
-
-//     }  
-
-
-//     &__img {
-//         max-width: 100%;
-//         transform: translate(-0%,-50%); // overlap element instead of absolute positioning
-
-//     }
-
-//     // &__content {
-//     //     position: absolute;
-//     //     top: 250px;
-//     // }
-
-//     &__title {
-//         color: $color-white;
-//         font-size: 3.2rem;
-//         font-weight: 300;
-//     }
-
-//     &__description {
-//         color: $color-white;
-//         padding: 2rem;
-//     }
-// }

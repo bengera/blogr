@@ -5,6 +5,8 @@ const mobileNav = document.querySelector('.mobile-navigation')
 const hamburgerImage = document.querySelector('.header__hamburger')
 
 const product = document.getElementById('product')
+
+
 const navigationInner = document.querySelector('.mobile-navigation__inner')
 
 const arrow = document.querySelector('.mobile-navigation__arrow')

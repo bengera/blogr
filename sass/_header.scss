@@ -8,6 +8,9 @@
 
     &__mobile-nav {
         cursor: pointer;
+        @media only screen and (min-width: $bp-medium) {
+            display: none;
+        }
     }
         
     &__top-container {
@@ -35,6 +38,9 @@
         color: $color-white;
         font-weight: 600;
         font-family: $font-primary;
+        @media only screen and (min-width: $bp-medium) {
+            font-size: 6rem;
+        }
     }
 
     &__title-sub {
@@ -43,6 +49,9 @@
         font-size: 2rem;
         font-weight: 300;
         font-family: $font-primary;
+        @media only screen and (min-width: $bp-medium) {
+            font-size: 2.5rem;
+        }
     }
 
     &__buttons {
