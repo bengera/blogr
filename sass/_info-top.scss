@@ -10,20 +10,16 @@
 
 
     @media only screen and (min-width: $bp-large) {
-        // display: grid;
-        // grid-template-columns: 1fr 1fr;
-        // grid-template-rows: min-content min-content;
+       
         margin-bottom: $desktop-element-margin;
-        // text-align: justify;
-
+        
     }
 
     &__container {
 
-        @media only screen and (min-width: $bp-large) {
+        @media only screen and (min-width: $bp-largest) {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            bordeR: 2px solid black;
             max-width: 80vw;
             margin: 0 auto;
     
@@ -35,16 +31,16 @@
         max-width: 100%;
         margin: 4rem 0 5rem 0;
 
-        @media only screen and (min-width: $bp-large) {
+        @media only screen and (min-width: $bp-largest) {
             // width: 100%;
-            max-width: 600px;
+            min-width: 600px;
             margin: 0;
 
         }
     }
 
     &__image {
-        @media only screen and (min-width: $bp-large) {
+        @media only screen and (min-width: $bp-largest) {
             grid-column: 2 / 2;
             text-align: left;
         }
@@ -87,7 +83,7 @@
     }
 
     &__text-content {
-        @media only screen and (min-width: $bp-large) {
+        @media only screen and (min-width: $bp-largest) {
             grid-column: 1 / 1;
             grid-row: 1 / 2;
             margin-top: 5rem;
