@@ -55,9 +55,14 @@
         padding-right: 1rem;
         line-height: 37px;
 
-        @media only screen and (min-width: $bp-large) {
-            grid-row: 1 / 1;
-            grid-column: 1 / -1;
+        // @media only screen and (min-width: $bp-large) {
+        //     grid-row: 1 / 1;
+        //     grid-column: 1 / -1;
+        // }
+
+        @media only screen and (min-width: $bp-largest) {
+            margin-bottom: 2rem;
+            padding: 0;
         }
 
 
@@ -75,7 +80,9 @@
     &__description {
         color: $color-very-dark-grayish-blue;
         padding: 2rem;
-        // margin-bottom: 2rem;
+        @media only screen and (min-width: $bp-largest) {
+            padding: 0;
+        }
     }
 
     &__description:first-of-type {

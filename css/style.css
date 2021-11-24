@@ -492,10 +492,10 @@ main {
     padding-left: 1rem;
     padding-right: 1rem;
     line-height: 37px; }
-    @media only screen and (min-width: 62.5em) {
+    @media only screen and (min-width: 75em) {
       .info-top__title-h2, .info-top__title-h3 {
-        grid-row: 1 / 1;
-        grid-column: 1 / -1; } }
+        margin-bottom: 2rem;
+        padding: 0; } }
   @media only screen and (min-width: 62.5em) {
     .info-top__title-h2 {
       padding: 5rem;
@@ -504,6 +504,9 @@ main {
   .info-top__description {
     color: #4b5862;
     padding: 2rem; }
+    @media only screen and (min-width: 75em) {
+      .info-top__description {
+        padding: 0; } }
   .info-top__description:first-of-type {
     margin-bottom: 2.5rem; }
   @media only screen and (min-width: 75em) {
@@ -611,14 +614,31 @@ main {
   background-color: #25252d;
   padding: 5rem;
   border-top-right-radius: 12rem; }
+  @media only screen and (min-width: 75em) {
+    .footer__nav {
+      display: grid;
+      grid-template-columns: 30vw 15vw 15vw 15vw;
+      justify-items: center;
+      align-items: center; } }
   .footer__logo {
     margin-bottom: 4rem; }
-  .footer__title {
+  .footer__title-product, .footer__title-company, .footer__title-connect {
     color: white;
     margin-bottom: 2.5rem; }
+  @media only screen and (min-width: 75em) {
+    .footer__title-company {
+      grid-row: 1 / 1;
+      grid-column: 3 / 3; } }
+  @media only screen and (min-width: 75em) {
+    .footer__title-connect {
+      grid-row: 1/ 1;
+      grid-column: 4 / 4; } }
   .footer__nav-list {
     list-style: none;
     margin-bottom: 2rem; }
+  @media only screen and (min-width: 75em) {
+    .footer ul.footer__nav-list:nth-child(3) {
+      grid-column: 2; } }
   .footer__link:link, .footer__link:visited {
     color: #c8c8cb;
     text-decoration: none; }

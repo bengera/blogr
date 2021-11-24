@@ -3,19 +3,45 @@
     background-color: $color-very-dark-black-blue;
     padding: 5rem;
     border-top-right-radius: 12rem;
-    
+
+    &__nav {
+        @media only screen and (min-width: $bp-largest) {
+            display: grid;
+            grid-template-columns: 30vw 15vw 15vw 15vw;
+            justify-items: center;
+            align-items: center;
+        }
+    }
 
     &__logo {
         margin-bottom: 4rem;
     }
 
-    // &__nav {
-       
-    // }
 
-    &__title {
+
+    &__title-product,
+    &__title-company,
+    &__title-connect {
         color: $color-white;
         margin-bottom: 2.5rem;
+    }
+
+    &__title-product {
+        @media only screen and (min-width: $bp-largest) {}
+    }
+
+    &__title-company {
+        @media only screen and (min-width: $bp-largest) {
+            grid-row: 1 / 1;
+            grid-column: 3 / 3;
+        }
+    }
+
+    &__title-connect {
+        @media only screen and (min-width: $bp-largest) {
+            grid-row: 1/ 1;
+            grid-column: 4 / 4;
+        }
     }
 
     &__nav-list {
@@ -23,9 +49,15 @@
         margin-bottom: 2rem;
     }
 
-    // &__item {
-        
-    // }
+    ul.footer__nav-list:nth-child(3) {
+        @media only screen and (min-width: $bp-largest) {
+            grid-column: 2;
+        }
+
+    }
+
+
+
 
     &__link {
 
@@ -42,13 +74,7 @@
 
 
         }
-        
-        
+
+
     }
 }
-
-    
-
-
-
-
