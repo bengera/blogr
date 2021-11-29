@@ -7,13 +7,18 @@
     &__nav {
         @media only screen and (min-width: $bp-largest) {
             display: grid;
-            grid-template-columns: 30vw 15vw 15vw 15vw;
-            justify-items: center;
-            align-items: center;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            max-width: 1100px;
+            margin: 0 auto;
+
+            // border: 1px solid yellow;
         }
     }
 
     &__logo {
+        @media only screen and (min-width: $bp-largest) {
+            margin:0;
+        }
         margin-bottom: 4rem;
     }
 
@@ -24,23 +29,28 @@
     &__title-connect {
         color: $color-white;
         margin-bottom: 2.5rem;
+        @media only screen and (min-width: $bp-largest) {
+            margin-bottom: 1.5rem;
+        }
     }
 
     &__title-product {
-        @media only screen and (min-width: $bp-largest) {}
+        @media only screen and (min-width: $bp-largest) {
+
+        }
     }
 
     &__title-company {
         @media only screen and (min-width: $bp-largest) {
-            grid-row: 1 / 1;
-            grid-column: 3 / 3;
+            // grid-row: 1 / 1;
+            // grid-column: 3 / 3;
         }
     }
 
     &__title-connect {
         @media only screen and (min-width: $bp-largest) {
-            grid-row: 1/ 1;
-            grid-column: 4 / 4;
+            // grid-row: 1/ 1;
+            // grid-column: 4 / 4;
         }
     }
 

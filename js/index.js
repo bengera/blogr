@@ -38,3 +38,16 @@ product.addEventListener('click', () => {
     }
     
 });
+
+
+
+
+// document.addEventListener("click", (e) => {
+//     if (e.target.classList.contains("list__link")) {
+//       e.target.parentElement.classList.toggle("show");
+//     }
+//     if (e.target.id === "menu-toggle") {
+//       console.log(e.target);
+//       document.querySelector("#intro__top").classList.toggle("show");
+//     }
+//   });
