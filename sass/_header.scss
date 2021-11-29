@@ -8,36 +8,39 @@
 
     &__mobile-nav {
         cursor: pointer;
+
         @media only screen and (min-width: $bp-medium) {
             display: none;
         }
     }
-        
+
     &__top-container {
-        
+
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
         height: 15rem;
         padding: 2rem;
+        max-width: 1100px;
+        margin: 0 auto;
 
     }
-    
+
     &__hero-container {
         display: flex;
         flex-direction: column;
         text-align: center;
         margin: 0 auto;
         padding: 10rem 1rem 20rem 1rem;
-        
-               
+
+
     }
 
     &__title {
         color: $color-white;
         font-weight: 600;
         font-family: $font-primary;
+
         @media only screen and (min-width: $bp-medium) {
             font-size: 6rem;
         }
@@ -49,13 +52,14 @@
         font-size: 2rem;
         font-weight: 300;
         font-family: $font-primary;
+
         @media only screen and (min-width: $bp-medium) {
             font-size: 2.5rem;
         }
     }
 
     &__buttons {
-           
+
         margin: 0 auto;
         margin-top: 3rem;
     }
@@ -63,13 +67,13 @@
     &__cta-left,
     &__cta-right {
         border: 0;
-        padding:2rem;
+        padding: 2rem;
         cursor: pointer;
         border-radius: 30px;
         font-weight: 600;
         font-size: 1.8rem;
-        
-        
+
+
     }
 
     &__cta-left {
@@ -79,7 +83,8 @@
 
         &:hover {
             color: $color-white;
-            background: rgba(255, 255, 255, 0.1)    /*  10% opaque green */ 
+            background: rgba(255, 255, 255, 0.1)
+                /*  10% opaque green */
         }
     }
 
@@ -96,4 +101,58 @@
 
 
 
+}
+
+.main-nav {
+    border: 1px solid white;
+
+
+
+    &__list {
+        list-style: none;
+        padding: 2rem;
+
+
+    }
+
+    &__item {
+        display: inline-block;
+        margin-left: 2rem;
+
+
+
+
+    }
+
+    &__link {
+        position: relative;
+
+        &:visited,
+        &:active {
+            color: white;
+        }
+
+        &:hover {
+            color: red;
+        }
+        
+
+        &:after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background: url("../images/icon-arrow-light.svg") no-repeat;
+            display: inline-block;
+            height: 10px;
+            position: absolute;
+            top: 6px;
+            right: -15px;
+
+            
+        }
+
+        &:after:hover {
+            transform: rotate(180deg);
+        }
+    }
 }

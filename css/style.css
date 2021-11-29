@@ -410,9 +410,10 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     height: 15rem;
-    padding: 2rem; }
+    padding: 2rem;
+    max-width: 1100px;
+    margin: 0 auto; }
   .header__hero-container {
     display: flex;
     flex-direction: column;
@@ -459,6 +460,33 @@ main {
     .header__cta-right:hover {
       color: #ff3d54;
       background-color: white; }
+
+.main-nav {
+  border: 1px solid white; }
+  .main-nav__list {
+    list-style: none;
+    padding: 2rem; }
+  .main-nav__item {
+    display: inline-block;
+    margin-left: 2rem; }
+  .main-nav__link {
+    position: relative; }
+    .main-nav__link:visited, .main-nav__link:active {
+      color: white; }
+    .main-nav__link:hover {
+      color: red; }
+    .main-nav__link:after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background: url("../images/icon-arrow-light.svg") no-repeat;
+      display: inline-block;
+      height: 10px;
+      position: absolute;
+      top: 6px;
+      right: -15px; }
+    .main-nav__link:after:hover {
+      transform: rotate(180deg); }
 
 .info-top {
   margin-top: 12rem;
