@@ -40,7 +40,15 @@ product.addEventListener('click', () => {
 });
 
 
+//////////////////////////////////////
+const desktopNav = document.querySelector('.main-nav__link')
 
+desktopNav.addEventListener('click', () => {
+    desktopNav.classList.toggle('show');
+    
+});
+
+////////////////////////////////////
 
 // document.addEventListener("click", (e) => {
 //     if (e.target.classList.contains("list__link")) {

@@ -135,6 +135,16 @@
 
     }
 
+    &__link.show {
+        
+        
+        &:after {
+            transform: rotate(180deg); 
+            transition: all 0.1s linear;
+        }
+        
+    }
+
     &__link {
         position: relative;
 
@@ -144,7 +154,7 @@
         }
 
         &:hover {
-            color: red;
+            // color: red;
         }
 
 
@@ -158,6 +168,9 @@
             position: absolute;
             top: 6px;
             right: -15px;
+            transform: rotate(0);
+            
+            transition: all 0.1s linear;
 
 
         }
@@ -217,12 +230,10 @@
     
 
     
-
-    
 }
 
 .logo {
-    flex: 0;
+    
     @media only screen and (max-width: $bp-medium) {
         flex: 1;
     }

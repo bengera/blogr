@@ -476,12 +476,13 @@ main {
   .main-nav__item {
     display: inline-block;
     margin-left: 2rem; }
+  .main-nav__link.show:after {
+    transform: rotate(180deg);
+    transition: all 0.1s linear; }
   .main-nav__link {
     position: relative; }
     .main-nav__link:visited, .main-nav__link:active {
       color: white; }
-    .main-nav__link:hover {
-      color: red; }
     .main-nav__link:after {
       content: "";
       width: 10px;
@@ -491,7 +492,9 @@ main {
       height: 10px;
       position: absolute;
       top: 6px;
-      right: -15px; }
+      right: -15px;
+      transform: rotate(0);
+      transition: all 0.1s linear; }
   .main-nav__btn-container {
     display: flex;
     flex-direction: row; }
@@ -517,11 +520,9 @@ main {
       background-color: rgba(255, 255, 255, 0.1);
       color: white; }
 
-.logo {
-  flex: 0; }
-  @media only screen and (max-width: 50em) {
-    .logo {
-      flex: 1; } }
+@media only screen and (max-width: 50em) {
+  .logo {
+    flex: 1; } }
 
 .info-top {
   margin-top: 12rem;
