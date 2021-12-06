@@ -475,12 +475,14 @@ main {
     padding: 2rem; }
   .main-nav__item {
     display: inline-block;
-    margin-left: 2rem; }
+    margin-left: 4rem;
+    position: relative; }
   .main-nav__link.show:after {
     transform: rotate(180deg);
     transition: all 0.1s linear; }
   .main-nav__link {
-    position: relative; }
+    position: relative;
+    text-decoration: none; }
     .main-nav__link:visited, .main-nav__link:active {
       color: white; }
     .main-nav__link:after {
@@ -519,10 +521,26 @@ main {
     .main-nav__sign-up:hover {
       background-color: rgba(255, 255, 255, 0.1);
       color: white; }
+  .main-nav__sub {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    width: 16rem;
+    position: absolute;
+    top: 45px;
+    left: -40px;
+    list-style: none;
+    display: none; }
+  .main-nav__sub-item {
+    margin-bottom: 2.5px; }
 
 @media only screen and (max-width: 50em) {
   .logo {
     flex: 1; } }
+
+a {
+  text-decoration: none;
+  color: #000; }
 
 .info-top {
   margin-top: 12rem;
