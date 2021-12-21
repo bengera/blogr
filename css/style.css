@@ -694,10 +694,13 @@ a {
     margin-bottom: 2rem; }
 
 .footer {
-  text-align: center;
+  text-align: left;
   background-color: #25252d;
   padding: 5rem;
   border-top-right-radius: 12rem; }
+  @media only screen and (max-width: 75em) {
+    .footer {
+      text-align: center; } }
   @media only screen and (min-width: 75em) {
     .footer__nav {
       display: grid;
@@ -711,10 +714,10 @@ a {
         margin: 0; } }
   .footer__title-product, .footer__title-company, .footer__title-connect {
     color: white;
-    margin-bottom: 2.5rem; }
+    margin-bottom: .5rem; }
     @media only screen and (min-width: 75em) {
       .footer__title-product, .footer__title-company, .footer__title-connect {
-        margin-bottom: 1.5rem; } }
+        margin-bottom: .5rem; } }
   .footer__nav-list {
     list-style: none;
     margin-bottom: 2rem; }

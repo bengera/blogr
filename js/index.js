@@ -55,9 +55,6 @@ desktopNav.addEventListener('click', () => {
 });
 
 
-
-
-
 ////////////////////////////////////
 
 // document.addEventListener("click", (e) => {
