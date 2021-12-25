@@ -412,8 +412,7 @@ main {
     height: 15rem;
     padding: 2rem;
     max-width: 1100px;
-    margin: 0 auto;
-    border: 1px solid white; }
+    margin: 0 auto; }
   .header__hero-container {
     display: flex;
     flex-direction: column;
@@ -462,7 +461,6 @@ main {
       background-color: white; }
 
 .main-nav {
-  border: 1px solid white;
   margin-left: 5rem; }
   @media only screen and (max-width: 50em) {
     .main-nav {
